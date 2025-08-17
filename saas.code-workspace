@@ -5,6 +5,16 @@
     }
   ],
   "settings": {
-    "makefile.configureOnOpen": false
+    "makefile.configureOnOpen": false,
+
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          // Run whenever html, css, or js files are saved
+          "match": "\\.(html|css|js)$",
+          "cmd": "pre-commit run djade --all-files"
+        }
+      ]
+    }
   }
 }

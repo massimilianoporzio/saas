@@ -28,3 +28,8 @@ repos:
     rev: v3.20.0
     hooks:
       - id: pyupgrade
+  - repo: https://github.com/adamchainz/djade-pre-commit
+    rev: "1.4.0" # Replace with the latest tag on GitHub
+    hooks:
+      - id: djade
+        args: [--target-version, "5.1"]

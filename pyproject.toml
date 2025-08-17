@@ -11,6 +11,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "djade>=1.4.0",
     "djlint>=1.36.4",
     "pre-commit>=4.3.0",
 ]
