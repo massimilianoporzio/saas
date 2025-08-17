@@ -12,7 +12,6 @@ dependencies = [
 dev = [
     "pre-commit>=4.3.0",
 ]
-target-version = ["py313"]
 
 [tool.black]
 target-version = ["py313"]
