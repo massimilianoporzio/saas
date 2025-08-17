@@ -10,6 +10,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "djlint>=1.36.4",
     "pre-commit>=4.3.0",
 ]
 
@@ -23,3 +24,7 @@ profile = "black"
 # Enable Pyflakes `E` and `F` codes by default.
 select = ["E", "F"]
 ignore = ["E501", "E741"]
+
+[tool.djlint]
+ignore = "H001,H017,T001,H031,H030"
+profile = "django"
