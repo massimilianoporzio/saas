@@ -27,14 +27,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-#logging definitions
+# logging definitions
 import colorlog
+
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
     "formatters": {
-        "colored":{
-            '()': colorlog.ColoredFormatter,
+        "colored": {
+            "()": colorlog.ColoredFormatter,
             "format": "%(log_color)s%(levelname)s %(asctime)s - %(module)s - %(message)s",
             "log_colors": {
                 "DEBUG": "cyan",
@@ -99,7 +100,7 @@ ROOT_URLCONF = "home.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [

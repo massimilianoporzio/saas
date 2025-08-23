@@ -24,8 +24,8 @@ profile = "black"
 
 [tool.ruff]
 # Enable Pyflakes `E` and `F` codes by default.
-select = ["E", "F"]
-ignore = ["E501", "E741"]
+lint.select = ["E", "F"]
+lint.ignore = ["E501", "E741", "E402"]
 
 [tool.djlint]
 ignore = "H001,H017,T001,H031,H030"
