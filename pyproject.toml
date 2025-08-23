@@ -12,6 +12,7 @@ dependencies = [
 [dependency-groups]
 dev = [
     "djade>=1.4.0",
+    "django-browser-reload>=1.18.0",
     "djlint>=1.36.4",
     "pre-commit>=4.3.0",
 ]
